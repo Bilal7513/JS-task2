@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Outfit&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #292929;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 20px 0;
+}
+
+h1{
+    text-align: center;
+    color: #EDF4F2;
+}
+
+input {
+    color: #292929;
+    background-color: #EDF4F2;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 620px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+}
+
+li span{
+    display: flex;
+}
+
+button {
+    margin-left: -5px;
+    padding: 10px 0;
+    width: 180px;
+    color: #EDF4F2;
+    background: #484848;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.header button:hover{
+    color: #EDF4F2;
+    background-color: #31473A;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px 0px;
+    color: #EDF4F2;
+    font-weight: 700;
+    background-color: #484848;
+    cursor: pointer;
+    border-radius: 5px;
+    word-break: break-all;
+}
+
+li.checked{
+    color: #EDF4F2;
+    font-weight: 700;
+    background-color: #31473A;
+    text-decoration: line-through;
+}
+
+li:hover{
+    color: #EDF4F2;
+    font-weight: 700;
+    background-color: #31473A;
+}
+
+li i{
+    padding: 3px 0;
+    margin: 0 5px;
+}
+
+li i:hover{
+    color: red;
+}
+
+.logout{
+    background: none;
+    color: #EDF4F2;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.logout:hover{
+    color: #31473A;
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 300px;
+    }
+    input{
+        width: 220px;
+    }
+    button{
+        width: 80px;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    .container{
+        width: 400px;
+    }
+    input{
+        width: 280px;
+    }
+    button{
+        width: 120px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .container{
+        width: 700px;
+    }
+    input{
+        width: 580px;
+    }
+    button{
+        width: 120px;
+    }
+}
