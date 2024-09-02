@@ -85,6 +85,6 @@ input.addEventListener("keypress", function(event) {
       event.preventDefault();
       addBtn.click();
     }
-  });
+});
 
 window.onload = getData();
