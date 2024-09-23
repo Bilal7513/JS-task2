@@ -65,6 +65,8 @@ function getData(){
                 createList(item);
             })
         }
+    } else {
+        window.location.href = 'login.html';
     }
 };
 
